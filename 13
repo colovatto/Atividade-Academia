@@ -1,0 +1,14 @@
+double pc, sm, c, nb, st, pt;
+
+            Console.WriteLine("Informe o salário mínimo: ");
+            sm = double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o preço de custo da bicicleta: ");
+            pc = double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe número de bicletas vendidas:");
+            nb = double.Parse(Console.ReadLine());
+
+            pt = pc + (pc * 1.5);
+            c = nb * pc * 0.15;
+            st = sm * 2 + c;
+
+            Console.WriteLine("Salário do vendedor é de R$:" + st);
