@@ -1,0 +1,18 @@
+ double l, vt, m, v;
+            int kmi, kmf, kmt;
+
+            Console.WriteLine("Informe a quilometragem inicial: ");
+            kmi = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a quilometragem final: ");
+            kmf = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe quantidade gasta em combustível : ");
+            l = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe valor recebido: ");
+            v = int.Parse(Console.ReadLine());
+
+            kmt = kmf - kmi;
+            m = (double)kmt / l;
+            vt = v - (l * 6.9);
+
+            Console.WriteLine("A média de consumo é de: " + m + " km/l");
+            Console.WriteLine("O lucro do dia é de R$" + vt);
