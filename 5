@@ -1,0 +1,13 @@
+static void Main(string[] args)
+        {
+            double km, l, consu;
+
+            Console.WriteLine("Quantos km rodados: ");
+            km = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quantos l gastos: ");
+            l = double.Parse(Console.ReadLine());
+
+            consu = km / l;
+
+            Console.WriteLine("O consumo médio é de: " + consu + "km/l");
+        }
