@@ -1,0 +1,17 @@
+ static void Main(string[] args)
+        {
+            double a, b, c;
+
+            Console.WriteLine("Escreva um número para A: ");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Escreva um número para B: ");
+            b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("O número de A é: " + a + " e o número para B é: " + b);
+
+            c = b;
+            b = a;
+            a = c;
+
+            Console.WriteLine("O número de A é: " + a + " e o número para B é: " + b);
+        }
