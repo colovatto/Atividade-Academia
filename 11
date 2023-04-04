@@ -1,0 +1,18 @@
+double ele, branco, nulo, valido;
+
+            Console.WriteLine("Insira número de eleitores: ");
+            ele = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira número de votos brancos: ");
+            branco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira número de votos nulos: ");
+            nulo = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira número de votos válidos: ");
+            valido = double.Parse(Console.ReadLine());
+
+            branco = (branco / ele) * 100;
+            nulo = (nulo / ele) * 100;
+            valido = (valido / ele) * 100;
+
+            Console.WriteLine("Porcentagem de votos brancos: " + branco + "%");
+            Console.WriteLine("Porcentagem de votos nulos: " + nulo + "%");
+            Console.WriteLine("Porcentagem de votos válidos: " + valido + "%");
