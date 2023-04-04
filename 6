@@ -1,7 +1,7 @@
 static void Main(string[] args)
         {
             int codA, codB, quantA, quantB;
-            double valorA, valorB; ipi;
+            double valorA, valorB, ipi, valorAipi, valorBipi;
 
             Console.WriteLine("Informe o código do parafuso A: ");
             codA = int.Parse(Console.ReadLine());
@@ -16,9 +16,17 @@ static void Main(string[] args)
             Console.WriteLine("Informe a quantidade de parafusos B: ");
             quantB = int.Parse(Console.ReadLine());
             Console.WriteLine("Informe o valor dos parafusos B: ");
-            valorB = double.Parse(Console.ReadLine())
+            valorB = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Informe a porcentagem de IPI: ");
-            ipi = double.Parse(Console.ReadLine()); 
+            ipi = double.Parse(Console.ReadLine());
+
+            valorAipi = valorA + (valorA * (ipi / 100));
+            valorBipi = valorB + (valorB * (ipi / 100));
+
+            Console.WriteLine("Código do Produto: " + codA + " Quantidade do Produto: " + quantA + " Valor unitário: " + valorA + " Valor c/ IPI: " + valorAipi);
+            Console.WriteLine("Código do Produto: " + codB + " Quantidade do Produto: " + quantB + " Valor unitário: " + valorB + " Valor c/ IPI: " + valorBipi);
+
+
 
         }
