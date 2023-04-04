@@ -1,0 +1,19 @@
+static void Main(string[] args)
+        {
+            int num;
+            double salf, venda, perc, sall;
+
+            Console.WriteLine("Insira número do vendedor");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira salário fixo");
+            salf = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira número total de vendas");
+            venda = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira porcentagem de venda: ");
+            perc = double.Parse(Console.ReadLine());
+
+            sall = salf + (venda * (perc/100));
+
+            Console.WriteLine("O salário líquido do usuário é de: " + sall + "R$");
+
+        }
